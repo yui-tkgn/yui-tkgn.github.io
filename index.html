@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charest="utf-8">
+		<title>紋身貼紙使用說明</title>
+		<link rel="stylesheet" href="./style.css" type="text/css">
+		<script>
+			const colors = ["#1F6DFF", "red"];
+			let i = 0;
+
+			setInterval(() => {
+			  document.getElementById("text").style.color = colors[i];
+			  i = (i + 1) % colors.length;
+			}, 500);
+			
+			
+			window.onload = () => {
+			  document.getElementById("box").classList.add("show");
+			};
+		</script>
+	</head>
+	<body>
+		<div class="container">	
+			<header>
+				<h1>紋身貼紙使用說明</h1>
+			</header>
+			
+			<div id="box" class="hidden">
+				<article>
+					<p id="text">
+						注意事項
+						<span>請詳閱以下注意事項再使用貼紙！！</span>
+					</p>
+					<ol>
+						<li>敏感皮膚不建議使用</li>
+						<li>若有任何不適、紅腫發癢請盡快移除貼紙</li>
+					</ol>
+				</article>
+			
+				<article>
+					<p>紋身貼紙使用方法</p>
+					<ol>
+						<li>撕下透明膠</li>
+						<li>將貼紙貼在想貼的部位，並用水沾濕，靜待約半分鐘</li>
+						<li>撕下底紙，並等待約十分鐘晾乾</li>
+					</ol>
+				</article>
+				
+				<article>
+					<p>如何去除紋身貼紙？</p>
+					<ol>
+						<li>建議使用油性物質（如：卸妝油）、酒精倒在化妝棉上，或使用酒精棉片，並敷在貼紙處，待數秒後再擦拭</li>
+						<li>使用膠帶覆蓋貼紙，已指尖按壓或指甲摩擦，撕掉膠帶後即可去除</li>
+						<li>待數天後貼紙自然脫落</li>
+					</ol>
+				</article>
+			</div>
+			
+			<footer>
+				<h3>
+					threads：<a href="https://www.threads.com/@yui_niki20170917" target="_blank">qing(@yui_niki20170917)</a>
+				</h3>
+			</footer>
+		</div>
+	</body>
+</html>
