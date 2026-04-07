@@ -77,11 +77,4 @@ h3 {
   transform: translateY(0);
 }
 
-@media screen and (min-width: 769px) {	
-	.items {
-		flex-direction: row;
-	}
-	.items > span {
-		padding: 5px 30px;
-	}
-}
+
